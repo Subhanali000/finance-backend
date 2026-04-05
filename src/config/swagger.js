@@ -9,11 +9,18 @@ const options = {
     info: {
       title: 'Finance Data Processing API',
       version: '1.0.0',
-      description: 'Backend API for Finance Dashboard with Role-Based Access Control',
-      contact: {
-        name: 'Subhan Ali',
-        email: 'subhanali.ali000777@gmail.com'
-      }
+      description: `
+Backend API for Finance Dashboard with Role-Based Access Control.
+
+⚠️ Notes:
+- By default, a newly registered user is assigned the "viewer" role.
+- To test different roles (e.g., admin), you can modify the role manually in:
+  src/presentation/route/authRoute.js
+- If a user is already registered, please use the login route instead of registering again.
+- 📧 Contact: <a href="mailto:subhanali.ali000777@gmail.com">subhanali.ali000777@gmail.com</a>
+- 📞 Phone: +91-8743094186
+
+      `
     },
     servers: [
       {
