@@ -21,7 +21,7 @@ const options = {
         description: 'Development server'
       },
       {
-        url: 'https://your-production-url.com',
+        url: 'https://finance-backend-hmcg.onrender.com',
         description: 'Production server'
       }
     ],
