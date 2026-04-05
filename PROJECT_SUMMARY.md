@@ -146,8 +146,8 @@ npm run seed-admin
 npm run dev
 ```
 
-Server will run at: `http://localhost:5000`
-API Docs at: `http://localhost:5000/api-docs`
+Server will run at: `https://finance-backend-hmcg.onrender.com`
+API Docs at: `https://finance-backend-hmcg.onrender.com/api-docs`
 
 ## 🔑 Default Credentials
 

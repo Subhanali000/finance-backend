@@ -1,3 +1,8 @@
+# This File contains only deployed urls so you can use it But It is not ideal for running in localhost or local system You should have to change its url (https://finance-backend-hmcg.onrender.com) from this to (http://localhost:5000) localhost url
+ make chnage in server.js file
+src/config/swagger.js
+also once review the md files 
+############################
 # API Usage Examples
 
 Complete examples for testing all endpoints.
@@ -495,33 +500,33 @@ Authorization: Bearer <admin-token>
 
 ```bash
 # 1. Register
-curl -X POST http://localhost:5000/api/auth/register \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{"name":"Bob Smith","email":"bob@example.com","password":"BobPass123","role":"admin"}'
 
 # Save the token from response
 
 # 2. Create income record
-curl -X POST http://localhost:5000/api/records \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/records \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <YOUR_TOKEN>" \
   -d '{"amount":5000,"type":"income","category":"Salary","date":"2024-01-15"}'
 
 # 3. Create expense record
-curl -X POST http://localhost:5000/api/records \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/records \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <YOUR_TOKEN>" \
   -d '{"amount":1200,"type":"expense","category":"Rent","date":"2024-01-05"}'
 
 # 4. View all records
-curl -X GET http://localhost:5000/api/records \
+curl -X GET https://finance-backend-hmcg.onrender.com/api/records \
   -H "Authorization: Bearer <YOUR_TOKEN>"
 
 # 5. View dashboard summary
-curl -X GET http://localhost:5000/api/dashboard/summary \
+curl -X GET https://finance-backend-hmcg.onrender.com/api/dashboard/summary \
   -H "Authorization: Bearer <YOUR_TOKEN>"
 
 # 6. View monthly trends
-curl -X GET http://localhost:5000/api/dashboard/trends \
+curl -X GET https://finance-backend-hmcg.onrender.com/api/dashboard/trends \
   -H "Authorization: Bearer <YOUR_TOKEN>"
 ```

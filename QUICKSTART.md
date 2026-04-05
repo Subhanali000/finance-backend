@@ -59,32 +59,32 @@ npm start
 You should see:
 ```
  Finance Backend Server Started
- Server: http://localhost:5000
- API Docs: http://localhost:5000/api-docs
+ Server: https://finance-backend-hmcg.onrender.com
+ API Docs: https://finance-backend-hmcg.onrender.com/api-docs
 ```
 
 ## Step 5: Test It!
 
 ### Option A: Open Browser
 
-1. Go to: http://localhost:5000
+1. Go to: https://finance-backend-hmcg.onrender.com
 2. You should see welcome message
 
 ### Option B: Use cURL
 
 ```bash
 # Health check
-curl http://localhost:5000/health
+curl https://finance-backend-hmcg.onrender.com/health
 
 # Login as admin
-curl -X POST http://localhost:5000/api/auth/login \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@finance.com","password":"Admin@123"}'
 ```
 
 ### Option C: Use API Documentation
 
-1. Open: http://localhost:5000/api-docs
+1. Open: https://finance-backend-hmcg.onrender.com/api-docs
 2. Click "Authorize" button
 3. Login to get JWT token
 4. Use token to test endpoints
@@ -92,18 +92,18 @@ curl -X POST http://localhost:5000/api/auth/login \
 ##  What's Next?
 
 ### 1. Explore API Documentation
-Visit http://localhost:5000/api-docs to see all available endpoints
+Visit https://finance-backend-hmcg.onrender.com/api-docs to see all available endpoints
 
 ### 2. Create Your First Record
 
 ```bash
 # First, login and get token
-curl -X POST http://localhost:5000/api/auth/login \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@finance.com","password":"Admin@123"}'
 
 # Use the token to create a record
-curl -X POST http://localhost:5000/api/records \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/records \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_TOKEN_HERE" \
   -d '{
@@ -118,7 +118,7 @@ curl -X POST http://localhost:5000/api/records \
 ### 3. View Dashboard
 
 ```bash
-curl http://localhost:5000/api/dashboard/summary \
+curl https://finance-backend-hmcg.onrender.com/api/dashboard/summary \
   -H "Authorization: Bearer YOUR_TOKEN_HERE"
 ```
 
@@ -153,4 +153,4 @@ Your Finance Backend API is now running!
 
 ---
 
-**Need Help?** Check the full README.md or API documentation at http://localhost:5000/api-docs
+**Need Help?** Check the full README.md or API documentation at https://finance-backend-hmcg.onrender.com/api-docs

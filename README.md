@@ -135,13 +135,13 @@ npm run dev
 npm start
 ```
 
-The server will start at `http://localhost:5000`
+The server will start at `https://finance-backend-hmcg.onrender.com`
 
 ## API Documentation
 
 Once the server is running, access the interactive API documentation at:
 ```
-http://localhost:5000/api-docs
+https://finance-backend-hmcg.onrender.com/api-docs
 ```
 
 ### Quick API Overview
@@ -175,7 +175,7 @@ http://localhost:5000/api-docs
 ## Testing the API
 
 ### Using Swagger UI
-1. Go to `http://localhost:5000/api-docs`
+1. Go to `https://finance-backend-hmcg.onrender.com/api-docs`
 2. Use the "Authorize" button to add your JWT token
 3. Try out endpoints directly from the browser
 
@@ -183,7 +183,7 @@ http://localhost:5000/api-docs
 
 **1. Register a new user:**
 ```bash
-curl -X POST http://localhost:5000/api/auth/register \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "John Doe",
@@ -195,7 +195,7 @@ curl -X POST http://localhost:5000/api/auth/register \
 
 **2. Login:**
 ```bash
-curl -X POST http://localhost:5000/api/auth/login \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "john@example.com",
@@ -205,7 +205,7 @@ curl -X POST http://localhost:5000/api/auth/login \
 
 **3. Create a financial record:**
 ```bash
-curl -X POST http://localhost:5000/api/records \
+curl -X POST https://finance-backend-hmcg.onrender.com/api/records \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{
@@ -219,7 +219,7 @@ curl -X POST http://localhost:5000/api/records \
 
 **4. Get dashboard summary:**
 ```bash
-curl -X GET "http://localhost:5000/api/dashboard/summary" \
+curl -X GET "https://finance-backend-hmcg.onrender.com/api/dashboard/summary" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
@@ -228,7 +228,7 @@ curl -X GET "http://localhost:5000/api/dashboard/summary" \
 Import the following collection structure:
 
 1. Create a new collection "Finance API"
-2. Set base URL: `http://localhost:5000`
+2. Set base URL: `https://finance-backend-hmcg.onrender.com`
 3. Add Authorization header: `Bearer {{token}}`
 4. Add endpoints as shown in API documentation
 

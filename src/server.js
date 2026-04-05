@@ -23,13 +23,13 @@ const startServer = async () => {
       console.log(` API Docs: http://localhost:${PORT}/api-docs`);
       console.log(` Health Check: http://localhost:${PORT}/health`);
       console.log('================================');
-      
+      //Kindly chnage the development url into http://localhost:5000
       if (NODE_ENV === 'development') {
         console.log('\n Quick Start:');
-        console.log('   1. Register: POST http://localhost:5000/api/auth/register');
-        console.log('   2. Login: POST http://localhost:5000/api/auth/login');
+        console.log('   1. Register: POST https://finance-backend-hmcg.onrender.com/api/auth/register');
+        console.log('   2. Login: POST https://finance-backend-hmcg.onrender.com/api/auth/login');
         console.log('   3. Use token in Authorization: Bearer <token>');
-        console.log('\n See API documentation at: http://localhost:5000/api-docs\n');
+        console.log('\n See API documentation at: https://finance-backend-hmcg.onrender.com/api-docs\n');
       }
     });
 
