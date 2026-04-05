@@ -13,6 +13,8 @@ const options = {
 Backend API for Finance Dashboard with Role-Based Access Control.
 
 ⚠️ Notes:
+- Kindly use Bearer Token for authentication in Authorize Buttion Right side  for testing the Api seamlessly.
+- Kindly use Production server for testing, as the Development server use only in Local system.
 - By default, a newly registered user is assigned the "viewer" role.
 - To test different roles (e.g., admin), you can modify the role manually in:
   src/presentation/route/authRoute.js
