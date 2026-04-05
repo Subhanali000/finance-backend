@@ -24,7 +24,7 @@ Backend API for Finance Dashboard with Role-Based Access Control.
     },
     servers: [
       {
-        url: 'ttps://finance-backend-ebon.vercel.app',
+        url: 'https://finance-backend-hmcg.onrender.com',
         description: 'Development server'
       },
       {
