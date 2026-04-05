@@ -24,11 +24,11 @@ Backend API for Finance Dashboard with Role-Based Access Control.
     },
     servers: [
       {
-        url: 'http://localhost:5000',
+        url: 'ttps://finance-backend-ebon.vercel.app',
         description: 'Development server'
       },
       {
-        url: 'https://finance-backend-hmcg.onrender.com',
+        url: 'http://localhost:5000',
         description: 'Production server'
       }
     ],
